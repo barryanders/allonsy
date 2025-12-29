@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Allonsy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #0f1115;
+        --card: #171a21;
+        --text: #f6f7fb;
+        --muted: #c2c6d2;
+        --accent: #ff5a5f;
+        --border: #2a2f3a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
+        background: radial-gradient(circle at top, #1a1f2b 0%, #0f1115 60%);
+        color: var(--text);
+      }
+
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 56px 20px 72px;
+      }
+
+      header {
+        margin-bottom: 28px;
+      }
+
+      h1 {
+        font-size: 42px;
+        margin: 0 0 8px;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin: 28px 0 12px;
+      }
+
+      p {
+        line-height: 1.6;
+        margin: 0 0 14px;
+        color: var(--muted);
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: var(--text);
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 20px 22px;
+        margin: 18px 0;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .badge {
+        display: inline-block;
+        background: rgba(255, 90, 95, 0.12);
+        color: var(--accent);
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 13px;
+      }
+
+      .details {
+        display: grid;
+        gap: 12px;
+        margin-top: 14px;
+      }
+
+      .detail-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: baseline;
+        color: var(--muted);
+      }
+
+      .detail-row strong {
+        color: var(--text);
+        min-width: 100px;
+      }
+
+      a {
+        color: var(--text);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="badge">Allonsy</span>
+        <h1>Z-Templates Studio</h1>
+        <p class="subtitle">Beautiful, Gmail-friendly email templates made fast.</p>
+      </header>
+
+      <section class="card">
+        <div class="details">
+          <div class="detail-row">
+            <strong>Pricing</strong>
+            <span>$39 lifetime access (one-time)</span>
+          </div>
+          <div class="detail-row">
+            <strong>Trial</strong>
+            <span>7-day free trial available</span>
+          </div>
+          <div class="detail-row">
+            <strong>Checkout</strong>
+            <span>Secure Stripe checkout inside the app</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>What it does</h2>
+        <ul>
+          <li>Build and customize emails with a modern block editor</li>
+          <li>Export Gmail-friendly HTML</li>
+          <li>Save and reuse templates</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Refund policy</h2>
+        <p>No refunds except where required by law.</p>
+      </section>
+
+      <section>
+        <h2>Privacy</h2>
+        <p>We do not sell personal data. Your template content stays in your browser unless you export it.</p>
+      </section>
+    </main>
+  </body>
+</html>
