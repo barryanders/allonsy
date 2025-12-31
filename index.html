@@ -9,17 +9,18 @@
       @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=JetBrains+Mono:wght@500&display=swap");
 
       :root {
-        --bg: #f6f7fb;
+        --bg: #f6f3ef;
         --ink: #0f172a;
         --muted: #5b6477;
         --surface: #ffffff;
-        --surface-2: #eef2f8;
+        --surface-2: #f1f5fb;
         --border: rgba(15, 23, 42, 0.12);
-        --accent: #0ea5a4;
-        --accent-2: #ff6b6b;
+        --accent: #0ea5e9;
+        --accent-2: #22c55e;
         --accent-3: #f59e0b;
         --shadow: 0 30px 80px rgba(15, 23, 42, 0.16);
         --shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.12);
+        --gradient: linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%);
       }
 
       * {
@@ -30,8 +31,9 @@
         margin: 0;
         font-family: "Space Grotesk", "Noto Sans", sans-serif;
         color: var(--ink);
-        background: radial-gradient(1200px 600px at 20% -10%, rgba(14, 165, 164, 0.16), transparent 60%),
-          radial-gradient(1000px 520px at 90% -20%, rgba(255, 107, 107, 0.18), transparent 55%),
+        background:
+          radial-gradient(1200px 600px at 20% -10%, rgba(14, 165, 233, 0.18), transparent 60%),
+          radial-gradient(1000px 520px at 90% -20%, rgba(34, 197, 94, 0.16), transparent 55%),
           var(--bg);
       }
 
@@ -68,8 +70,8 @@
         gap: 10px;
         padding: 6px 14px;
         border-radius: 999px;
-        background: rgba(14, 165, 164, 0.12);
-        color: #0f766e;
+        background: rgba(14, 165, 233, 0.12);
+        color: #0284c7;
         font-size: 12px;
         font-weight: 700;
         letter-spacing: 0.4px;
@@ -106,7 +108,7 @@
         width: 36px;
         height: 36px;
         border-radius: 12px;
-        background: linear-gradient(135deg, #0f172a 0%, #0ea5a4 100%);
+        background: linear-gradient(135deg, #0f172a 0%, #0ea5e9 55%, #22c55e 100%);
         display: grid;
         place-items: center;
         color: #fff;
@@ -158,9 +160,9 @@
       }
 
       .btn-primary {
-        background: linear-gradient(135deg, #0ea5a4, #0f766e);
+        background: var(--gradient);
         color: #fff;
-        box-shadow: 0 16px 30px rgba(14, 165, 164, 0.28);
+        box-shadow: 0 16px 30px rgba(14, 165, 233, 0.28);
       }
 
       .btn-primary:hover {
@@ -226,7 +228,7 @@
         inset: auto -20% -35% auto;
         width: 240px;
         height: 240px;
-        background: radial-gradient(circle, rgba(245, 158, 11, 0.18), transparent 70%);
+        background: radial-gradient(circle, rgba(14, 165, 233, 0.18), transparent 70%);
         transform: rotate(15deg);
       }
 
@@ -307,7 +309,7 @@
       }
 
       .mock-card .bar.short { width: 70%; }
-      .mock-card .bar.accent { background: #67e8f9; }
+      .mock-card .bar.accent { background: #7dd3fc; }
 
       .mock-card .row {
         display: flex;
@@ -371,8 +373,8 @@
         display: inline-flex;
         padding: 4px 10px;
         border-radius: 999px;
-        background: rgba(15, 118, 110, 0.12);
-        color: #0f766e;
+        background: rgba(14, 165, 233, 0.12);
+        color: #0284c7;
         font-size: 11px;
         font-weight: 700;
         text-transform: uppercase;
@@ -400,7 +402,7 @@
       }
 
       .pricing {
-        background: linear-gradient(135deg, rgba(14, 165, 164, 0.12), rgba(15, 23, 42, 0.04));
+        background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(15, 23, 42, 0.04));
         border-radius: 28px;
         padding: 34px;
         border: 1px solid rgba(15, 23, 42, 0.08);
@@ -438,7 +440,7 @@
         inset: -40% auto auto -10%;
         width: 260px;
         height: 260px;
-        background: radial-gradient(circle, rgba(14, 165, 164, 0.4), transparent 70%);
+        background: radial-gradient(circle, rgba(14, 165, 233, 0.35), transparent 70%);
       }
 
       .cta-panel h2 {
@@ -449,6 +451,10 @@
       .cta-panel p {
         color: rgba(248, 250, 252, 0.72);
         margin: 0;
+      }
+
+      .cta-row.is-spaced {
+        margin-top: 18px;
       }
 
       footer {
@@ -524,8 +530,8 @@
           <a href="#faq">FAQ</a>
         </nav>
         <div class="cta-row">
-          <a class="btn btn-secondary" href="#pricing">Buy Lifetime</a>
-          <a class="btn btn-primary" href="#pricing">Start Trial</a>
+          <a class="btn btn-secondary" href="https://extensionpay.com/extension/z-templates">Buy Lifetime</a>
+          <a class="btn btn-primary" href="https://extensionpay.com/extension/z-templates">Start Trial</a>
         </div>
       </div>
     </header>
@@ -539,9 +545,9 @@
             Z-Templates Studio gives you a polished builder, curated layouts, and Gmail-safe export.
             Create high-impact campaigns in minutes and reuse them forever.
           </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#pricing">Start Trial</a>
-            <a class="btn btn-secondary" href="#pricing">Buy Lifetime</a>
+          <div class="cta-row is-spaced">
+            <a class="btn btn-primary" href="https://extensionpay.com/extension/z-templates">Start Trial</a>
+            <a class="btn btn-secondary" href="https://extensionpay.com/extension/z-templates">Buy Lifetime</a>
           </div>
           <div class="hero-meta">
             <span>One time license</span>
@@ -643,9 +649,9 @@
               <div class="badge">Pricing</div>
               <h3 class="price">$39 <span>one time license</span></h3>
               <p class="section-subtitle">Start with a 7 day trial. Upgrade once and keep it forever.</p>
-              <div class="cta-row">
-                <a class="btn btn-primary" href="#pricing">Start Trial</a>
-                <a class="btn btn-secondary" href="#pricing">Buy Lifetime</a>
+              <div class="cta-row is-spaced">
+                <a class="btn btn-primary" href="https://extensionpay.com/extension/z-templates">Start Trial</a>
+                <a class="btn btn-secondary" href="https://extensionpay.com/extension/z-templates">Buy Lifetime</a>
               </div>
             </div>
           </div>
@@ -679,9 +685,9 @@
             <span class="tagline">Allonsy x Z-Templates</span>
             <h2>Make every email look like a launch.</h2>
             <p>Try the Studio for 7 days. When you are ready, buy lifetime access and keep every template.</p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#pricing">Start Trial</a>
-              <a class="btn btn-secondary" href="#pricing">Buy Lifetime</a>
+            <div class="cta-row is-spaced">
+              <a class="btn btn-primary" href="https://extensionpay.com/extension/z-templates">Start Trial</a>
+              <a class="btn btn-secondary" href="https://extensionpay.com/extension/z-templates">Buy Lifetime</a>
             </div>
           </div>
         </div>
